@@ -10,16 +10,20 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.BSIPracticeService">
         <service
+            android:name=".SampleIntentService"
+            android:exported="false"></service>
+        <service
             android:name=".OriginService"
             android:enabled="true"
-            android:exported="true"></service>
+            android:exported="true" />
 
         <activity
             android:name=".MainActivity"
             android:exported="true">
             <intent-filter>
-                <action android:name="android.intent.action.MAIN"/>
-                <category android:name="android.intent.category.LAUNCHER"/>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
     </application>
